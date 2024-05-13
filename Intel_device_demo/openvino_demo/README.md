@@ -54,8 +54,14 @@ python3 quantize.py --model_path {your_path}/chatglm3-6b --precision int4 --outp
 
 ## 4. 运行 ChatGLM3 模型
 
+命令行对话：
 ```
 python3 chat.py --model_path {your_path}/chatglm3-6b --max_sequence_length 4096 --device CPU
+```
+
+网页版对话Demo（基于Gradio）：
+```
+python3 web_demo.py --model_path {your_path}/chatglm3-6b --max_sequence_length 4096 --device CPU
 ```
 
 ### 可以选择的参数
